@@ -1,0 +1,130 @@
+/* dice.css */
+
+body {
+    background: radial-gradient(circle, #1e1e2f, #12121a);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 50px;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 30px;
+  }
+  
+  /* Heading Style */
+  .text-center {
+    text-align: center;
+  }
+  .dice-head {
+    font-size: 2rem;
+    font-weight: 600;
+    color:white; 
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 3px 10px rgba(255, 107, 107, 0.6);
+    border: 1.5px solid white;
+  }
+  
+  .dice-head:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(255, 107, 107, 0.6);
+
+  }
+  
+  
+  .mb-4 {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+  }
+  
+  .text-center.mb-4 {
+    font-size: 3rem;
+    color: white;
+  }
+  
+  /* Dice Container */
+  .dice-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 30px 0;
+  }
+  
+  /* Dice Styling */
+  .dice {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .dice p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  /* ⬆️ Increased dice size */
+  .dice img {
+    width: 140px;
+    height: 140px;
+    animation: shake 0.6s ease;
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  .icon-link {
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    margin-top: auto;
+  }
+  
+  .icon-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+    background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+  }
+  
+  /* Hover effect */
+  .btn-primary5:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(132, 94, 247, 0.7);
+  }
+  
+  /* Button container center */
+  .text-center.mt-3 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
