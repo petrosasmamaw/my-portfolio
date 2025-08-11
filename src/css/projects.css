@@ -1,3 +1,16 @@
+.deployed-websites {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 18px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 /* General styling for the entire app */
 .app-container {
   background-color: #0f172a;

@@ -1,0 +1,89 @@
+.udemy-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 40px 20px;
+  background:   #113F67;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.udemy-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ee5a24;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.image-wrapper {
+  background: rgba(17, 63, 103, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(17, 63, 103, 0.2);
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.udemy-image {
+  max-width: 380px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(17, 63, 103, 0.15);
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 200px;
+}
+
+.resume-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 28px;
+  background: rgba(17, 63, 103, 0.7);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(17, 63, 103, 0.2);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.resume-link:hover {
+  background: rgba(17, 63, 103, 0.9);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(17, 63, 103, 0.3);
+}
+
+@media (max-width: 900px) {
+  .udemy-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .right-section {
+    align-items: center;
+    min-width: unset;
+  }
+}

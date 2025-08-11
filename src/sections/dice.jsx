@@ -4,7 +4,7 @@ import "../css/dice.css";
 function Dice() {
   const [diceOne, setDiceOne] = useState("public/images/dice6.png");
   const [diceTwo, setDiceTwo] = useState("public/images/dice6.png");
-  const [head, setHead] = useState("Play the game");
+  const [head, setHead] = useState("Fun Dice Game – Built with React 🎲");
 
   function handleClick() {
     const randomNumberOne = Math.floor(Math.random() * 6) + 1;
@@ -27,7 +27,7 @@ function Dice() {
 
   return (
     <div id="project" className="container mt-5">
-      <p className="text-center mb-4">Fun Dice Game Built with React 🎲</p>
+      <p className="text-center mb-4">My projects</p>
       <p className="dice-head">{head}</p>
       <div className="dice-container">
         <div className="dice">
@@ -40,8 +40,8 @@ function Dice() {
           <img className="img2" src={diceTwo} alt="Dice 2" />
         </div>
       </div>
-      <div className="button-container">
-  <button className="icon-link" onClick={handleClick}>
+      <div className="button-container2">
+  <button className="icon-link2" onClick={handleClick}>
     Refresh Me
   </button>
 </div>

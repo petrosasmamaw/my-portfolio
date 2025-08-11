@@ -9,7 +9,7 @@
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
-  color: white;
+  color: #ee5a24 ;
   text-align: left;
   margin: 10px 0 10px 0;
   animation: roleFadeIn 2s cubic-bezier(0.4, 0, 0.2, 1) forwards, rolePulse 2.5s infinite alternate;

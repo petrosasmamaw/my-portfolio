@@ -38,16 +38,6 @@ function Features() {
         </div>
         
       </div>
-      <div className="resume">
-        <a
-          href="./assets/Petros Asmamaw Resume.pdf"
-          download="Petros-Asmamaw-Resume.pdf"
-          className="resume-link"
-        >
-          <FaDownload style={{marginRight: '8px ', verticalAlign: 'middle'}} />
-          Download Resume
-        </a>
-      </div>
         </div>
     )
 }

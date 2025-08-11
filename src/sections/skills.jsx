@@ -6,7 +6,6 @@ function Skills() {
         <div id="skills">
   <header class="header">
     <h1 class="title">Web Development Skills</h1>
-    <p class="subtitle">A showcase of the technologies I use to build modern, responsive, and dynamic websites.</p>
   </header>
 
   <div class="skills">

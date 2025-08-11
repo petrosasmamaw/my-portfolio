@@ -11,7 +11,7 @@ const Projects = () => {
       image: { src: movieSearching, alt: 'Movie Searching' },
       title: 'Movie-searching',
       description: 'A modern, responsive movie searching website that allows users to search, view. The design is sleek, user-friendly, and optimized for both desktop and mobile experiences.',
-      tags: ['HTML5', 'CSS3', 'JavaScript', '+3 more'],
+      tags: ['HTML5', 'CSS3', 'JavaScript', 'React'],
       viewDetailsLink: 'https://petros-asmamaw-projects-1.netlify.app/',
       githubLink: 'https://github.com/petrosasmamaw/petros-asmamaw-movie-searching.git',
     },
@@ -21,7 +21,7 @@ const Projects = () => {
       image: { src: notesApp, alt: 'Notes App' },
       title: 'Create-note',
       description: 'A visually stunning website for creating and managing notes with a responsive design and mockapi database.',
-      tags: ['HTML5', 'CSS3', 'JavaScript', '+4 more'],
+      tags: ['HTML5', 'CSS3', 'JavaScript', 'React'],
       viewDetailsLink: 'https://petros-create-note.netlify.app/',
       githubLink: 'https://github.com/petrosasmamaw/Petros-Create-Note.git',
     }
@@ -39,7 +39,8 @@ const Projects = () => {
 };
 
 const ProjectCard = ({ type, image, title, description, tags, viewDetailsLink, githubLink }) => {
-  return (
+  return (<div>
+    <p className='deployed-websites'>Deployed Website</p>
     <div className="project-card">
       <div className="project-badge">{type}</div>
       <img src={image.src} alt={image.alt} className="project-image" />
@@ -62,7 +63,7 @@ const ProjectCard = ({ type, image, title, description, tags, viewDetailsLink, g
           </a>
         </div>
       </div>
-    </div>
+    </div></div>
   );
 };
 

@@ -4,7 +4,7 @@ body {
   background-color: #113F67;
     color: white;
     font-family: 'Segoe UI', sans-serif;
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 0;
   }
   
@@ -46,12 +46,13 @@ body {
     display: block;
     text-align: center;
     margin-bottom: 1.5rem;
+
     
   }
   
   .text-center.mb-4 {
     font-size: 3rem;
-    color: white;
+    color: #ee5a24;
   }
   
   /* Dice Container */
@@ -92,7 +93,7 @@ body {
     75% { transform: rotate(5deg); }
     100% { transform: rotate(0deg); }
   }
-  .icon-link {
+  .icon-link2 {
     padding: 12px 24px;
     background: linear-gradient(45deg, #ff6b6b, #ee5a24);
     color: white;

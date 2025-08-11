@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/navbar.css";
 import { FaHome, FaStar, FaTools, FaProjectDiagram, FaUser } from "react-icons/fa";
+import { FaCertificate } from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -10,6 +11,7 @@ function Navbar() {
         <a className="nav-link" href="#about"><FaHome style={{marginRight: '6px'}} />Home</a>
         <a className="nav-link" href="#features"><FaStar style={{marginRight: '6px'}} />Features</a>
         <a className="nav-link" href="#skills"><FaTools style={{marginRight: '6px'}} />Skills</a>
+  <a className="nav-link" href="#certificate"><FaCertificate style={{marginRight: '6px'}} />Certificate</a>
         <a className="nav-link" href="#project"><FaProjectDiagram style={{marginRight: '6px'}} />Projects</a>
       </div>
     </nav>
