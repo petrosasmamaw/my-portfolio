@@ -1,11 +1,12 @@
 import React from "react";
-import "../css/features.css"
-import laptop from "../images-all/laptop.svg"
-import mouse from "../images-all/mouse.svg"
-import braces from "../images-all/braces.svg"
+import "../css/features.css";
+import { FaDownload } from "react-icons/fa";
+import laptop from "../images-all/laptop.svg";
+import mouse from "../images-all/mouse.svg";
+import braces from "../images-all/braces.svg";
 
 function Features() {
-    return (
+    return (<div>
         <div id="features">
         <div className="features">
           <div className="feature">
@@ -35,7 +36,19 @@ function Features() {
             <a href="https://t.me/Nehemiah00" className="icon-link">Contact to action</a>
           </div>
         </div>
+        
       </div>
+      <div className="resume">
+        <a
+          href="./assets/Petros Asmamaw Resume.pdf"
+          download="Petros-Asmamaw-Resume.pdf"
+          className="resume-link"
+        >
+          <FaDownload style={{marginRight: '8px ', verticalAlign: 'middle'}} />
+          Download Resume
+        </a>
+      </div>
+        </div>
     )
 }
 

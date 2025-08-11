@@ -27,7 +27,7 @@ function Dice() {
 
   return (
     <div id="project" className="container mt-5">
-      <p className="text-center mb-4">My Project Dice Game 🎲</p>
+      <p className="text-center mb-4">Fun Dice Game Built with React 🎲</p>
       <p className="dice-head">{head}</p>
       <div className="dice-container">
         <div className="dice">

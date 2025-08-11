@@ -1,9 +1,48 @@
+.role {
+  display: flex;
+  align-items: center;
+}
+/* Role styling for Frontend-developer */
+.role {
+  text-shadow: 0 0 20px #113F67, 0 0 40px #113F67;
+  font-size: 2.2rem;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: white;
+  text-align: left;
+  margin: 10px 0 10px 0;
+  animation: roleFadeIn 2s cubic-bezier(0.4, 0, 0.2, 1) forwards, rolePulse 2.5s infinite alternate;
+}
+
+@keyframes roleFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes rolePulse {
+  0% {
+    text-shadow: 0 0 10px #113F67, 0 0 20px #113F67;
+    letter-spacing: 2px;
+  }
+  100% {
+    text-shadow: 0 0 30px #113F67, 0 0 40px #113F67;
+    letter-spacing: 4px;
+  }
+}
 #about {
   padding: 40px 20px 5px 20px;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #113F67;
 }
 
 .text-center {
