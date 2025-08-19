@@ -7,6 +7,7 @@ import Dice from './sections/dice'
 import Projects from './sections/projects'
 import Footer from './sections/footer'
 import Certificate from './sections/certeficate'
+import Contact from './sections/contact'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Certificate />
       <Dice />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   )

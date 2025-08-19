@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import certificateImage from '../images-all/Petros-Asmamaw-Udemy-Certificate.jpg';
+import resume from '../images-all/resume.png';
 import '../css/certeficate.css';
 
 const Certificate = () => {
@@ -19,16 +20,16 @@ const Certificate = () => {
       <div className="right-section">
         <div className="button-container">
           <a
-            href="/Petros-Asmamaw-Udemy-Certificate.pdf"
-            download="Petros-Asmamaw-Udemy-Certificate.pdf"
+            href={certificateImage}
+            download="Petros-Asmamaw-Udemy-Certificate.jpg"
             className="resume-link"
           >
             <FaDownload style={{ marginRight: '8px', verticalAlign: 'middle' }} />
             Download Certificate
           </a>
           <a
-            href="/Petros-Asmamaw-Resume.pdf"
-            download="Petros-Asmamaw-Resume.pdf"
+            href={resume}
+            download="resume.png"
             className="resume-link"
           >
             <FaDownload style={{ marginRight: '8px', verticalAlign: 'middle' }} />
