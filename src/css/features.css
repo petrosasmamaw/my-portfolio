@@ -1,11 +1,10 @@
-
 #features {
   padding: 5px 20px 40px 20px;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #113F67;
+  background-color: #0f172a;
 }
 
 .features {
@@ -19,7 +18,7 @@
 
 .feature {
   flex: 1;
-  background-color: rgba(17, 63, 103, 0.7);
+  background-color: rgba(15, 23, 42, 0.7);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 40px 30px;
@@ -81,21 +80,20 @@
 
 .icon-link {
   padding: 12px 24px;
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(45deg, #10b981, #10b981);
   color: white;
   text-decoration: none;
   border-radius: 25px;
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
   margin-top: auto;
 }
 
 .icon-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
-  background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+  background: linear-gradient(45deg, #10b981, #10b981);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
 }
 
 /* Responsive design */

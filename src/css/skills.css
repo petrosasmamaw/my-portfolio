@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #113F67;
+  background-color: #0f172a;
 }
 
 .header {
@@ -18,7 +18,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0 0 15px 0;
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(45deg, #10b981, #10b981);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -57,7 +57,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(45deg, #10b981, #10b981);
   border-radius: 2px;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .skill-card {
-  background-color: rgba(17, 63, 103, 0.7);
+ background-color: rgba(15, 23, 42, 0.7);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 30px 25px;
@@ -118,7 +118,7 @@
   left: 0;
   width: 40px;
   height: 2px;
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(45deg, #10b981, #10b981);
   border-radius: 1px;
 }
 

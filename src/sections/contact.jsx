@@ -43,9 +43,9 @@ const Contact = () => {
             important to us as we strive to provide exceptional service to our 
             universty community
             <ul>
-                <li><img src={mail_icon} alt="" />Contact@Petrosasmamaw@gmail.com</li>
-                <li><img src={phone_icon} alt="" />+251 09********</li>
-                <li><img src={location_icon} alt="" />new Adress</li>
+                <li><img src={mail_icon} alt="" />Contact@petrosasmamaw2@gmail.com</li>
+                <li><img src={phone_icon} alt="" />+251 989886956</li>
+                <li><img src={location_icon} alt="" />Addres: Bahir Dar, Ethiopia</li>
             </ul>
           </p>
        </div>

@@ -9,7 +9,7 @@
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
-  color: #ee5a24 ;
+  color: #10b981 ;
   text-align: left;
   margin: 10px 0 10px 0;
   animation: roleFadeIn 2s cubic-bezier(0.4, 0, 0.2, 1) forwards, rolePulse 2.5s infinite alternate;
@@ -42,7 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #113F67;
+  background-color: #0f172a;
 }
 
 .text-center {
@@ -122,14 +122,13 @@
 }
 
 .btn-primary {
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(45deg, #10b981, #10b981);
   color: white;
-  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
 }
 
 .btn-outline-secondary {

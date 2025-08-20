@@ -4,6 +4,7 @@ import movieSearching from '../images-all/movie.png';
 import notesApp from '../images-all/notes.png';
 import car from '../images-all/car.png';
 import quiz from '../images-all/quiz.png';
+import college from '../images-all/college.png';
 
 const Projects = () => {
   const projects = [
@@ -40,6 +41,16 @@ const Projects = () => {
     },
     {
        id: 4,
+      type: 'Web',
+      image: { src: college, alt: 'college app' },
+      title: 'College-web',
+      description: 'This is a fully responsive college website developed using React, designed to provide students, faculty, and visitors with a seamless online experience. The website features a modern UI, fast navigation, and optimized performance across all devices.',
+      tags: ['HTML5', 'CSS3', 'JavaScript', 'React'],
+      viewDetailsLink: 'https://petros-college-web.netlify.app/',
+      githubLink: 'https://github.com/petrosasmamaw/petros-college.git'
+    },
+    {
+       id: 5,
       type: 'Web',
       image: { src: quiz, alt: 'quiz app' },
       title: 'Create-quiz',

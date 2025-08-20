@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/personal.css";
-import petrosImg from "../images-all/image.jpg";
+import petrosImg from "../images-all/my-photo1.png";
 import { FaInstagram, FaTelegramPlane, FaLinkedin, FaDesktop } from "react-icons/fa";
 
 
