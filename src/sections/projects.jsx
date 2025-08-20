@@ -5,6 +5,7 @@ import notesApp from '../images-all/notes.png';
 import car from '../images-all/car.png';
 import quiz from '../images-all/quiz.png';
 import college from '../images-all/college.png';
+import portfolio from '../images-all/portfolio.png';
 
 const Projects = () => {
   const projects = [
@@ -58,6 +59,16 @@ const Projects = () => {
       tags: ['HTML5', 'CSS3', 'JavaScript', 'React'],
       viewDetailsLink: 'https://petros-quiz-web.netlify.app/',
       githubLink: 'https://github.com/petrosasmamaw/Petros-quiz.git'
+    },
+    {
+       id: 6,
+      type: 'Web',
+      image: { src: portfolio, alt: 'portfolio app' },
+      title: 'My-portfolio',
+      description: 'A modern and fully responsive portfolio website crafted with React to present my journey, skills, and projects. It delivers a sleek design with fast performance, intuitive navigation, and seamless adaptability across all screen sizes. Built with reusable React components, the site offers a professional showcase of my work while maintaining a user-friendly and engaging experience.',
+      tags: ['HTML5', 'CSS3', 'JavaScript', 'React'],
+      viewDetailsLink: 'https://petros-portfolio-web.netlify.app/',
+      githubLink: 'https://github.com/petrosasmamaw/my-portfolio.git'
     }
   ];
 
