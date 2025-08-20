@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import "../css/dice.css";
 
+
 function Dice() {
-  const [diceOne, setDiceOne] = useState("public/images/dice6.png");
-  const [diceTwo, setDiceTwo] = useState("public/images/dice6.png");
+  const [diceOne, setDiceOne] = useState("/images/dice6.png");
+  const [diceTwo, setDiceTwo] = useState("/images/dice6.png");
   const [head, setHead] = useState("Fun Dice Game – Built with React 🎲");
 
   function handleClick() {
     const randomNumberOne = Math.floor(Math.random() * 6) + 1;
     const randomNumberTwo = Math.floor(Math.random() * 6) + 1;
 
-    const randomImage1 = `public/images/dice${randomNumberOne}.png`;
-    const randomImage2 = `public/images/dice${randomNumberTwo}.png`;
+    const randomImage1 = `/images/dice${randomNumberOne}.png`;
+    const randomImage2 = `/images/dice${randomNumberTwo}.png`;
 
     setDiceOne(randomImage1);
     setDiceTwo(randomImage2);
