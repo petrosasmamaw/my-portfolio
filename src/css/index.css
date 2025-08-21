@@ -1,3 +1,22 @@
 body{
     background-color:#113F67;
+    /* Use Roboto Mono for body text for a clean, technical feel */
+    font-family: 'Roboto Mono', monospace;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    color: #f8fafc;
+}
+
+/* Headings use Exo 2 for a modern, geometric look */
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Paragraphs use Lato for a clean and beautiful look */
+p {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7; /* Improved readability */
 }

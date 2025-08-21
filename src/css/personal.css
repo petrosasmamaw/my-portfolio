@@ -6,7 +6,8 @@
 .role {
   text-shadow: 0 0 20px #113F67, 0 0 40px #113F67;
   font-size: 2.2rem;
-  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  /* Changed to the new heading font */
+  font-family: 'Exo 2', sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
   color: #10b981 ;

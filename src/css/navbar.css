@@ -12,6 +12,8 @@
   background-color: #0f172a;
   cursor: pointer;
   border-bottom: 3px solid white;
+  /* inherit global font */
+  font-family: inherit;
 }
 
 .navbar-brand {
@@ -20,7 +22,8 @@
   padding: 0.7rem 2rem;
   color: whitesmoke;
   text-decoration: none;
-  font-family: 'Arial', sans-serif;
+  /* allow heading/font rules to control appearance */
+  font-family: inherit;
   letter-spacing: 2px;
 }
 
@@ -82,7 +85,7 @@
     right: -220px;
     bottom: 0;
     flex-direction: column;
-    background: #212EA0;
+    background: #0f172a;
     z-index: 999;
     width: 200px;
     padding-top: 70px;
@@ -90,6 +93,8 @@
     box-shadow: -2px 0 8px rgba(17,63,103,0.15);
     transition: right 0.3s;
     height: 100vh;
+    padding-left: 40px;
+    border-left: 3px solid white;
   }
   .navbar-nav.active {
     right: 0;
