@@ -4,9 +4,7 @@ import "../css/skills.css"
 function Skills() {
     return (
         <div id="skills">
-  <header class="header">
-    <h1 class="title">Web Development Skills</h1>
-  </header>
+ 
 
   <div class="skills">
     <p class="core-skills-heading">Core Front-End Skills</p>
@@ -26,9 +24,9 @@ function Skills() {
       </div>
 
       <div class="skill-card">
-        <h3>Bootstrap</h3>
+        <h3>JavaScript</h3>
         <p>
-          I use Bootstrap to speed up the development process with its pre-built components and responsive grid system. I customize Bootstrap using SASS variables or utility classes to maintain brand consistency and achieve a professional look while saving development time.
+          JavaScript adds interactivity and logic to my web projects. I use it for dynamic DOM manipulation, event handling, form validation, animations, and integrating third-party APIs. I write clean and modular JavaScript code that follows modern ES6+ standards.
         </p>
       </div>
 
@@ -42,17 +40,18 @@ function Skills() {
 
     <p class="core-skills-heading" >Programming & Logic</p>
     <div class="skill-list">
-      <div class="skill-card">
-        <h3>JavaScript</h3>
-        <p>
-          JavaScript adds interactivity and logic to my web projects. I use it for dynamic DOM manipulation, event handling, form validation, animations, and integrating third-party APIs. I write clean and modular JavaScript code that follows modern ES6+ standards.
-        </p>
-      </div>
+     
 
       <div class="skill-card">
         <h3>React.js</h3>
         <p>
           React is my go-to JavaScript framework for building interactive, scalable single-page applications (SPAs). I use hooks for state and lifecycle management, reusable functional components for UI design, and React Router for navigation. I also manage side effects with useEffect and integrate APIs with Axios or fetch.
+        </p>
+      </div>
+       <div class="skill-card">
+        <h3>Redux Toolkit</h3>
+        <p>
+              Redux Toolkit is my preferred state management library for React applications. I use it to efficiently handle global state with clean, maintainable code. I implement features like slices, async thunks for API integration, and selectors for optimized data access. With Redux DevTools, I track state changes in real time to ensure predictable and scalable app behavior.
         </p>
       </div>
     </div>

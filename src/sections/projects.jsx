@@ -6,21 +6,45 @@ import car from '../images-all/car.png';
 import quiz from '../images-all/quiz.png';
 import college from '../images-all/college.png';
 import portfolio from '../images-all/portfolio.png';
+import game from '../images-all/game.png';
+import notertk from '../images-all/note-rtk.png';
+import { SiDiscover } from 'react-icons/si';
 
 const Projects = () => {
   const projects = [
-  {
+     {   
+    
       id: 1,
+      type: 'Web',
+      image: { src: game, alt: 'game discover' },
+      title: 'Game-Discover',
+      description: 'Game-Discover is a modern React-based gaming hub where users can browse, review, and favorite their top games. Built with clean design and smooth UI, it delivers a fun and interactive experience for every gamer. Whether you’re exploring new adventures or showing love to classics, this site keeps your gaming world organized and stylishly presented.',
+      tags: ['HTML5', 'CSS3',  'React' ,'API' ,'Redux-toolkit'],
+      viewDetailsLink: 'https://petros-game-discovery.netlify.app/',
+      githubLink: 'https://github.com/petrosasmamaw/Game-discovery-.git',
+    },
+  {
+      id: 2,
       type: 'Web',
       image: { src: movieSearching, alt: 'Movie Searching' },
       title: 'Movie-searching',
       description: 'A modern, responsive movie searching website that allows users to search, view. The design is sleek, user-friendly, and optimized for both desktop and mobile experiences.',
-      tags: ['HTML5', 'CSS3', 'JavaScript', 'React'],
+      tags: ['HTML5', 'CSS3', 'JavaScript', 'React' ,'API' ,'context'],
       viewDetailsLink: 'https://petros-asmamaw-projects-1.netlify.app/',
       githubLink: 'https://github.com/petrosasmamaw/petros-asmamaw-movie-searching.git',
     },
     {
-      id: 2,
+      id: 3,
+      type: 'Web',
+      image: { src: notertk, alt: 'note taking app' },
+      title: 'Updated Create Note',
+      description: 'I’ve upgraded my game website’s state management system from React Context API to Redux Toolkit (RTK) for improved performance, scalability, and maintainability. This update makes the app more efficient in handling global states like user favorites, game details, and reviews.',
+      tags: ['HTML5', 'CSS',  'React', 'Redux-toolkit','mockapi'],
+      viewDetailsLink: 'https://peter-create-note-redux-toolkit.netlify.app/',
+      githubLink: 'https://github.com/petrosasmamaw/Create-note-redux_toolkit.git',
+    },
+    {
+      id: 4,
       type: 'Web',
       image: { src: car, alt: 'car slider app' },
       title: 'The-car-slider',
@@ -31,7 +55,7 @@ const Projects = () => {
     },
     
     {
-      id: 3,
+      id: 5,
       type: 'Web',
       image: { src: notesApp, alt: 'Notes App' },
       title: 'Create-note',
@@ -41,7 +65,7 @@ const Projects = () => {
       githubLink: 'https://github.com/petrosasmamaw/Petros-Create-Note.git',
     },
     {
-       id: 4,
+       id: 6,
       type: 'Web',
       image: { src: college, alt: 'college app' },
       title: 'College-web',
@@ -51,7 +75,7 @@ const Projects = () => {
       githubLink: 'https://github.com/petrosasmamaw/petros-college.git'
     },
     {
-       id: 5,
+       id: 7,
       type: 'Web',
       image: { src: quiz, alt: 'quiz app' },
       title: 'Create-quiz',
@@ -61,7 +85,7 @@ const Projects = () => {
       githubLink: 'https://github.com/petrosasmamaw/Petros-quiz.git'
     },
     {
-       id: 6,
+       id: 8,
       type: 'Web',
       image: { src: portfolio, alt: 'portfolio app' },
       title: 'My-portfolio',

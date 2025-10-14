@@ -7,6 +7,9 @@ import braces from "../images-all/braces.svg";
 
 function Features() {
     return (<div>
+       <header class="header">
+          <h1 class="title">Web Development Skills</h1>
+       </header>
         <div id="features">
         <div className="features">
           <div className="feature">
