@@ -8,13 +8,23 @@ import college from '../images-all/college.png';
 import portfolio from '../images-all/portfolio.png';
 import game from '../images-all/game.png';
 import notertk from '../images-all/note-rtk.png';
-import { SiDiscover } from 'react-icons/si';
+import petershop from '../images-all/petershop.png';
 
 const Projects = () => {
   const projects = [
-     {   
+    {   
     
       id: 1,
+      type: 'Web',
+      image: { src: petershop, alt: 'petershop' },
+      title: 'Shopping -site',
+      description: 'Peter-Shop is a modern React-based shopping app where users can browse products, add items to their cart, and leave comments. Built with sleek design and smooth UI, it delivers an interactive shopping experience. Guests can explore products freely, while registered users enjoy personalized carts and comment features, keeping their shopping organized and engaging.',
+      tags: ['HTML5', 'CSS3',  'React' ,'API' ,'Redux-toolkit','supabase auth','supabase db'],
+      viewDetailsLink: 'https://peter-shop.netlify.app/',
+      githubLink: 'https://github.com/petrosasmamaw/Peter-Shop.git',
+    },
+    {
+      id: 2,
       type: 'Web',
       image: { src: game, alt: 'game discover' },
       title: 'Game-Discover',
@@ -23,8 +33,18 @@ const Projects = () => {
       viewDetailsLink: 'https://petros-game-discovery.netlify.app/',
       githubLink: 'https://github.com/petrosasmamaw/Game-discovery-.git',
     },
+     {
+      id: 3,
+      type: 'Web',
+      image: { src: notertk, alt: 'note taking app' },
+      title: 'Updated Create Note',
+      description: 'I’ve upgraded my game website by integrating Supabase authentication and database support, alongside migrating from React Context API to Redux Toolkit (RTK) for state management. This update enhances performance, scalability, and maintainability, enabling efficient handling of global states like user favorites, game details, reviews, and secure user authentication. The result is a more dynamic, interactive, and personalized gaming experience.',
+      tags: ['HTML5', 'CSS',  'React', 'Redux-toolkit','supabase auth','supabase db'],
+      viewDetailsLink: 'https://create-note-authentication.netlify.app/',
+      githubLink: 'https://github.com/petrosasmamaw/Create-note-with-supbase-authentication.git',
+    },
   {
-      id: 2,
+      id: 4,
       type: 'Web',
       image: { src: movieSearching, alt: 'Movie Searching' },
       title: 'Movie-searching',
@@ -33,18 +53,9 @@ const Projects = () => {
       viewDetailsLink: 'https://petros-asmamaw-projects-1.netlify.app/',
       githubLink: 'https://github.com/petrosasmamaw/petros-asmamaw-movie-searching.git',
     },
+   
     {
-      id: 3,
-      type: 'Web',
-      image: { src: notertk, alt: 'note taking app' },
-      title: 'Updated Create Note',
-      description: 'I’ve upgraded my game website’s state management system from React Context API to Redux Toolkit (RTK) for improved performance, scalability, and maintainability. This update makes the app more efficient in handling global states like user favorites, game details, and reviews.',
-      tags: ['HTML5', 'CSS',  'React', 'Redux-toolkit','mockapi'],
-      viewDetailsLink: 'https://peter-create-note-redux-toolkit.netlify.app/',
-      githubLink: 'https://github.com/petrosasmamaw/Create-note-redux_toolkit.git',
-    },
-    {
-      id: 4,
+      id: 5,
       type: 'Web',
       image: { src: car, alt: 'car slider app' },
       title: 'The-car-slider',
@@ -55,7 +66,7 @@ const Projects = () => {
     },
     
     {
-      id: 5,
+      id: 6,
       type: 'Web',
       image: { src: notesApp, alt: 'Notes App' },
       title: 'Create-note',
@@ -65,7 +76,7 @@ const Projects = () => {
       githubLink: 'https://github.com/petrosasmamaw/Petros-Create-Note.git',
     },
     {
-       id: 6,
+       id: 7,
       type: 'Web',
       image: { src: college, alt: 'college app' },
       title: 'College-web',
@@ -75,7 +86,7 @@ const Projects = () => {
       githubLink: 'https://github.com/petrosasmamaw/petros-college.git'
     },
     {
-       id: 7,
+       id: 8,
       type: 'Web',
       image: { src: quiz, alt: 'quiz app' },
       title: 'Create-quiz',
@@ -85,7 +96,7 @@ const Projects = () => {
       githubLink: 'https://github.com/petrosasmamaw/Petros-quiz.git'
     },
     {
-       id: 8,
+       id: 9,
       type: 'Web',
       image: { src: portfolio, alt: 'portfolio app' },
       title: 'My-portfolio',
