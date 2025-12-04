@@ -39,27 +39,31 @@
 }
 
 .feature-icon {
+  /* make icon a circular container */
   width: 80px;
   height: 80px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  margin-bottom: 10px;
-  transition: all 0.3s ease;
+  margin-bottom: 12px;
+  overflow: hidden; /* ensure img is clipped to circle */
+  background: rgba(255,255,255,0.03);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.feature-icon img {
+  /* fill the circular container and keep aspect */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0; /* container handles the round shape */
 }
 
 .feature-icon:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.1);
-}
-
-.feature-icon img {
-  width: 50px;
-  height: 50px;
-  filter: brightness(0) invert(1);
-  transition: all 0.3s ease;
 }
 
 .feature h3 {
@@ -126,13 +130,14 @@
   }
   
   .feature-icon {
-    width: 60px;
+    width: 60px;   /* smaller circular icon on small screens */
     height: 60px;
   }
   
   .feature-icon img {
-    width: 35px;
-    height: 35px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   
   .feature h3 {

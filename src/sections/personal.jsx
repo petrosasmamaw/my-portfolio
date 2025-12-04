@@ -9,13 +9,14 @@ function Personal() {
         <div id="about">
             <div className="text-center">
                 <div className="text-content">
-                    <p className="role"><FaDesktop style={{marginRight: '5px', verticalAlign: 'middle'}} />Frontend-developer</p>
+                    <p className="role"><FaDesktop style={{marginRight: '5px', verticalAlign: 'middle'}} />FullStack-developer</p>
                     <h1 className="name-heading">PETROS ASMAMAW</h1>
                     <p className="intro-text">
-                        I’m Petros Asmamaw, a front-end web developer.
-                        I specialize in creating responsive and dynamic websites.
-                        My main focus is building modern applications with React.
-                        I’m passionate about delivering clean, user-friendly designs.
+                        I’m Petros Asmamaw, a MERN stack developer. I build responsive, dynamic web apps using MongoDB, Express, React, and Node.js. Focused on clean UX and performant code.
+                    </p>
+
+                    <p className="react-summary">
+                        <strong>React — Expertise:</strong> Hooks, Context API, React Router, state management (Redux/Context), component architecture, performance optimizations and testing.
                     </p>
                 </div>
                 

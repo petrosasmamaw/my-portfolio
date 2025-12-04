@@ -5,6 +5,7 @@ import resume from '../images-all/resume.png';
 import '../css/certeficate.css';
 import reactCertificate from '../images-all/PetrosAsmamawReact.jpg';
 
+
 const Certificate = () => {
   return (
     <>
