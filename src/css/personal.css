@@ -38,21 +38,22 @@
   }
 }
 #about {
-  padding: 40px 20px 5px 20px;
-  min-height: 100vh;
+  padding: 6rem 1rem 3rem;
+  background: transparent;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #0f172a;
 }
 
 .text-center {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
   gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  align-items: center;
 }
 
 /* Left side - Text content */
@@ -63,17 +64,20 @@
 }
 
 .name-heading {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: white;
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: var(--font-heading);
 }
 
 .intro-text {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  color: whitesmoke
+  font-size: 1.05rem;
+  color: #dbeafe;
+  margin-bottom: 1rem;
+  line-height: 1.65;
+  font-family: var(--font-body);
 }
 
 /* Right side - Image and buttons */
@@ -86,13 +90,13 @@
 }
 
 .intro-img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 18px;
+  display: block;
+  border: 4px solid rgba(16,185,129,0.08);
+  box-shadow: 0 14px 40px rgba(2,6,23,0.6);
   object-fit: cover;
-  border: 5px solid whitesmoke;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .intro-img:hover {
@@ -103,47 +107,34 @@
 
 .button-group {
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+  align-items: center;
+  justify-content: center; /* center the three buttons; change to flex-start if you prefer left aligned */
+  flex-wrap: nowrap; /* keep them on one row */
 }
 
-.btn {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
+/* make each button share the available row space and keep equal width */
+.button-group a {
   display: inline-block;
-  text-align: center;
-  min-width: 120px;
+  width: 100%;
 }
 
-.btn-primary {
-  background: linear-gradient(45deg, #10b981, #10b981);
-  color: white;
-  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+.button-group .btn {
+  flex: 1 1 0;
+  min-width: 0; /* prevents overflowing when text is long */
 }
 
-.btn-primary:hover {
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
-}
-
-.btn-outline-secondary {
-  background: transparent;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-}
-
-.btn-outline-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(249, 248, 248, 0.2);
+/* Responsive: stack on very small screens */
+@media (max-width: 480px) {
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .button-group .btn {
+    width: 100%;
+    flex: none;
+  }
 }
 
 /* Responsive design */

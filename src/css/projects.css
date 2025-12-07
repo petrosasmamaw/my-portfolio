@@ -18,8 +18,8 @@
 /* Grid layout for the cards */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -46,27 +46,38 @@
   border: 1px solid #374151;
 }
 
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 60px rgba(2, 6, 23, 0.6);
+}
+
 .project-image {
   width: 100%;
   height: 12rem;
   object-fit: cover;
+  display: block;
 }
 
 .project-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .project-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+  font-weight: 800;
   color: #fff;
+  font-size: 1.05rem;
+  margin: 0;
 }
 
 .project-description {
-  color: #9ca3af;
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+  font-family: var(--font-body);
 }
 
 /* Badge styling */
@@ -87,18 +98,17 @@
 /* Tags styling */
 .project-tags {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .project-tag {
-  background-color: #1e3a8a;
-  color: #93c5fd;
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.25rem 0.625rem;
-  border-radius: 9999px;
+  background: rgba(16, 185, 129, 0.08);
+  color: #a7f3d0;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.8rem;
 }
 
 /* Buttons container */
@@ -108,32 +118,54 @@
 }
 
 /* Button styling */
-.view-details-btn,
-.github-btn {
-  flex: 1 1 0%;
-  text-align: center;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  transition-property: background-color;
-  transition-duration: 300ms;
-}
-
 .view-details-btn {
-  background-color: transparent;
-  border: 1px solid #4b5563;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
   color: #fff;
-}
-
-.view-details-btn:hover {
-  background-color: #374151;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 700;
 }
 
 .github-btn {
-  background-color: #374151;
-  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  color: #e6eef8;
+  padding: 8px 12px;
+  border-radius: 10px;
 }
 
-.github-btn:hover {
-  background-color: #4b5563;
+/* Section heading */
+.projects-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: #eef6fb;
+  margin: 1rem 0 1.25rem;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  text-transform: none;
+  font-family: var(--font-heading);
+}
+
+/* decorative underline */
+.projects-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 12px auto 0;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #10b981 0%, #06b6d4 100%);
+  box-shadow: 0 6px 16px rgba(6, 182, 212, 0.12);
+}
+
+/* responsive adjustments */
+@media (max-width: 900px) {
+  .projects-heading { font-size: 1.7rem; margin-bottom: 16px; }
+  .projects-heading::after { width: 64px; height: 3px; }
+}
+
+@media (max-width: 480px) {
+  .projects-heading { font-size: 1.35rem; margin-bottom: 12px; }
+  .projects-heading::after { width: 48px; height: 3px; }
 }

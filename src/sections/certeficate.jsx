@@ -5,67 +5,62 @@ import resume from '../images-all/resume.png';
 import '../css/certeficate.css';
 import reactCertificate from '../images-all/PetrosAsmamawReact.jpg';
 
+const ResumeCard = ({ img, file }) => (
+  <div className="resume-card">
+    <div className="resume-thumb">
+      <img src={img} alt="Resume thumbnail" />
+    </div>
+    <div className="resume-info">
+      <h3 className="resume-title">My Resume</h3>
+      <p className="resume-note">Download a clean PDF version of my resume for details on experience and projects.</p>
+      <div className="resume-actions">
+        <a href={file} download="Petros-Resume.png" className="resume-download">
+          <FaDownload style={{ marginRight: 8 }} />
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+);
+
+const CertificateCard = ({ title, img, downloadName }) => (
+  <div className="udemy-container">
+    <div className="left-section">
+      <div className="image-wrapper">
+        <img src={img} alt={title} className="udemy-image" />
+      </div>
+    </div>
+    <div className="right-section">
+      <h2 className="udemy-title">{title}</h2>
+      <p className="udemy-subtitle">Verified Udemy certificate demonstrating course completion and applied skills.</p>
+      <div className="button-container">
+        <a href={img} download={downloadName} className="resume-link">
+          <FaDownload style={{ marginRight: '8px', verticalAlign: 'middle' }} />
+          Download Certificate
+        </a>
+      </div>
+    </div>
+  </div>
+);
 
 const Certificate = () => {
   return (
     <>
-    <div id="certificate" className="udemy-container">
-      <div className="left-section">
-        <h1 className="udemy-title">My Full-stack web development <br/> Udemy Certification</h1>
-        <div className="image-wrapper">
-          <img
-            src={certificateImage}
-            alt="Udemy Certificate"
-            className="udemy-image"
-          />
-        </div>
+      <div className="cert-section container">
+        <ResumeCard img={resume} file={resume} />
+
+        <CertificateCard
+          title={<><span>Full‑stack Web Development</span><br />Udemy Certification</>}
+          img={certificateImage}
+          downloadName="Petros-Asmamaw-Udemy-Certificate.jpg"
+        />
+
+        <CertificateCard
+          title={<><span>React | Redux Toolkit</span><br />Udemy Certification</>}
+          img={reactCertificate}
+          downloadName="PetrosAsmamawReact.jpg"
+        />
       </div>
-      <div className="right-section">
-        <div className="button-container">
-          <a
-            href={certificateImage}
-            download="Petros-Asmamaw-Udemy-Certificate.jpg"
-            className="resume-link"
-          >
-            <FaDownload style={{ marginRight: '8px', verticalAlign: 'middle' }} />
-            Download Certificate
-          </a>
-          <a
-            href={resume}
-            download="resume.png"
-            className="resume-link"
-          >
-            <FaDownload style={{ marginRight: '8px', verticalAlign: 'middle' }} />
-            Download Resume
-          </a>
-        </div>
-      </div>
-    </div>
-        <div id="certificate" className="udemy-container">
-      <div className="left-section">
-        <h1 className="udemy-title">My React | Redux Toolkit <br/> Udemy Certification</h1>
-        <div className="image-wrapper">
-          <img
-            src={reactCertificate}
-            alt="Udemy Certificate"
-            className="udemy-image"
-          />
-        </div>
-      </div>
-      <div className="right-section">
-        <div className="button-container">
-          <a
-            href={reactCertificate}
-            download="PetrosAsmamawReact.jpg"
-            className="resume-link"
-          >
-            <FaDownload style={{ marginRight: '8px', verticalAlign: 'middle' }} />
-            Download Certificate
-          </a>
-        </div>
-      </div>
-    </div>
-    
     </>
   );
 };

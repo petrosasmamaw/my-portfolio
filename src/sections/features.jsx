@@ -18,7 +18,7 @@ function Features() {
     return (
         <div>
             <header className="header">
-                <h1 className="title">Full-Stack Development Skills</h1>
+                <h1 className="title">Full-Stack Development Features</h1>
             </header>
 
             <div id="features">

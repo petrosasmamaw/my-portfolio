@@ -120,7 +120,8 @@ const Projects = () => {
     }
   ];
 
-  return (
+  return (<div>
+    <h2 className="projects-heading">My Advanced React Projects</h2>
     <div className="app-container">
       <div className="card-grid">
         {projects.map((project) => (
@@ -128,11 +129,13 @@ const Projects = () => {
         ))}
       </div>
     </div>
+  </div>
   );
 };
 
 const ProjectCard = ({ type, image, title, description, tags, viewDetailsLink, githubLink }) => {
-  return (<div>
+  return (
+  <div>
     <p className='deployed-websites'>Deployed Website</p>
     <div className="project-card">
       <div className="project-badge">{type}</div>
@@ -156,7 +159,8 @@ const ProjectCard = ({ type, image, title, description, tags, viewDetailsLink, g
           </a>
         </div>
       </div>
-    </div></div>
+    </div>
+    </div>
   );
 };
 

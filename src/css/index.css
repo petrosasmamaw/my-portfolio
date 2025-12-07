@@ -1,22 +1,71 @@
+:root{
+  --font-heading: "Poppins", "Exo 2", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Inter", "Lato", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --bg-900: #0f172a;
+  --muted: #94a3b8;
+  --accent: #10b981;
+  --accent-2: #06b6d4;
+  --max-width: 1200px;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
 body{
-    background-color:#113F67;
-    /* Use Roboto Mono for body text for a clean, technical feel */
-    font-family: 'Roboto Mono', monospace;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    color: #f8fafc;
+  margin:0;
+  background: linear-gradient(180deg,var(--bg-900), #061228 80%);
+  color:#e6eef8;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height:1.6;
+  -webkit-text-size-adjust:100%;
 }
 
-/* Headings use Exo 2 for a modern, geometric look */
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 600;
-  color: #ffffff;
+/* Layout container */
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:2rem;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-heading);
+  font-weight: 700;
   margin: 0;
+  color: #f8fafc;
+  line-height:1.1;
 }
 
-/* Paragraphs use Lato for a clean and beautiful look */
-p {
-  font-family: 'Lato', sans-serif;
-  line-height: 1.7; /* Improved readability */
+/* Paragraphs */
+p{ font-family: var(--font-body); color: #cbd5e1; margin:0 0 1rem 0; font-size:1rem; }
+
+/* Primary link & button styles */
+a{ color:var(--accent); text-decoration:none; transition:all .18s ease; }
+a:hover{ color:var(--accent-2); transform:translateY(-1px); }
+
+.btn{
+  display:inline-flex; align-items:center; gap:0.6rem;
+  padding:0.6rem 1rem; border-radius:10px; cursor:pointer;
+  font-weight:700; border:none; text-decoration:none;
 }
+.btn-primary{
+  background: linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:#fff; box-shadow:0 8px 24px rgba(16,185,129,0.12);
+}
+.btn-ghost{
+  background:transparent; border:1px solid rgba(255,255,255,0.06); color:#e6eef8;
+}
+
+/* Utility */
+.center{display:flex;align-items:center;justify-content:center}
+.row{display:flex;gap:1rem;align-items:center}
+.card{
+  background:var(--card);
+  border-radius:14px;
+  padding:1.25rem;
+  border:1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 8px 30px rgba(2,6,23,0.5);
+}
+/* responsive helpers */
+@media (max-width:768px){ .container{padding:1rem} h1{font-size:1.6rem} }
