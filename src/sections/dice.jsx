@@ -1,54 +1,88 @@
-import React, { useState } from "react";
-import "../css/dice.css";
+import React from 'react';
+import '../css/projects.css';
+import HAdmin from '../images-all/HAdmin.png';
+import hotel from '../images-all/hotel.png';
+import client from '../images-all/client.png';
 
-
-function Dice() {
-  const [diceOne, setDiceOne] = useState("/images/dice6.png");
-  const [diceTwo, setDiceTwo] = useState("/images/dice6.png");
-  const [head, setHead] = useState("Fun Dice Game – Built with React 🎲");
-
-  function handleClick() {
-    const randomNumberOne = Math.floor(Math.random() * 6) + 1;
-    const randomNumberTwo = Math.floor(Math.random() * 6) + 1;
-
-    const randomImage1 = `/images/dice${randomNumberOne}.png`;
-    const randomImage2 = `/images/dice${randomNumberTwo}.png`;
-
-    setDiceOne(randomImage1);
-    setDiceTwo(randomImage2);
-
-    if (randomNumberOne > randomNumberTwo) {
-      setHead("The winner is Player 1");
-    } else if (randomNumberOne < randomNumberTwo) {
-      setHead("The winner is Player 2");
-    } else {
-      setHead("The game is a draw");
+const Projects = () => {
+  const projects = [
+    {
+      id: 1,
+      type: 'Web',
+      image: { src: HAdmin, alt: 'hotel' },
+      title: 'BahiRoom Admin Dashboard',
+      description:
+        'MERN admin console with Supabase Auth, Redux Toolkit state, and MERN product/content management. Secure routes with React Router, real-time updates, and ops tools for inventory, users, and reviews.',
+      tags: ['node.js','express.js','mongodb','MERN', 'React', 'Redux Toolkit', 'React Router', 'Supabase Auth', 'Airtable', 'Axios', 'Tailwind/CSS',],
+      viewDetailsLink: 'https://bahi-room-admin-frontend.vercel.app/',
+      githubLink: 'https://github.com/petrosasmamaw/BahiRoom-Admin-Frontend.git',
+    },
+    {
+      id: 2,
+      type: 'Web',
+      image: { src: hotel, alt: 'hotel' },
+      title: 'BahiRoom Hotel Dashboard',
+      description:
+        'Hotel ops dashboard on MERN with Supabase Auth, protected routes via React Router, and Redux Toolkit for bookings, guests, and analytics. Integrates mern + REST APIs for live property insights.',
+      tags: ['node.js','express.js','mongodb','MERN', 'React', 'Redux Toolkit', 'React Router', 'Supabase Auth', 'Airtable', 'Axios', 'Tailwind/CSS',],
+      viewDetailsLink: 'https://bahi-room-hotel-frontend.vercel.app/',
+      githubLink: 'https://github.com/petrosasmamaw/BahiRoom-Hotel-Frontend.git',
+    },
+    {
+      id: 3,
+      type: 'Web',
+      image: { src: client, alt: 'client' },
+      title: 'BahiRoom Client Dashboard',
+      description:
+        'Client-facing MERN app with Supabase Auth, React Router navigation, and Redux Toolkit for bookings, favorites, and reviews. Fast, responsive UI with Axios-powered API calls and shared state.',
+      tags: ['node.js','express.js','mongodb','MERN', 'React', 'Redux Toolkit', 'React Router', 'Supabase Auth', 'Airtable', 'Axios', 'Tailwind/CSS',],
+      viewDetailsLink: 'https://bahi-room-client-frontend.vercel.app/',
+      githubLink: 'https://github.com/petrosasmamaw/BahiRoom-Client-Frontend.git',
     }
-  }
+  ];
 
+  return (<div>
+    <h2 className="projects-heading">My Advanced FullStack Projects (MERN Stack)</h2>
+    <div className="app-container">
+      <div className="card-grid">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
+      </div>
+    </div>
+  </div>
+  );
+};
+
+const ProjectCard = ({ type, image, title, description, tags, viewDetailsLink, githubLink }) => {
   return (
-    <div id="project" className="container mt-5">
-      <p className="text-center mb-4">My projects</p>
-      <p className="dice-head">{head}</p>
-      <div className="dice-container">
-        <div className="dice">
-          <p>Player 1</p>
-          <img className="img1" src={diceOne} alt="Dice 1" />
+  <div>
+    <p className='deployed-websites'>Deployed Website</p>
+    <div className="project-card">
+      <div className="project-badge">{type}</div>
+      <img src={image.src} alt={image.alt} className="project-image" />
+      <div className="project-content">
+        <h3 className="project-title">{title}</h3>
+        <p className="project-description">{description}</p>
+        <div className="project-tags">
+          {tags.map((tag, index) => (
+            <span key={index} className="project-tag">
+              {tag}
+            </span>
+          ))}
         </div>
-
-        <div className="dice">
-          <p>Player 2</p>
-          <img className="img2" src={diceTwo} alt="Dice 2" />
+        <div className="project-buttons">
+          <a href={viewDetailsLink} className="view-details-btn">
+            View Details
+          </a>
+          <a href={githubLink} className="github-btn">
+            GitHub
+          </a>
         </div>
       </div>
-      <div className="button-container2">
-  <button className="icon-link2" onClick={handleClick}>
-    Refresh Me
-  </button>
-</div>
-
+    </div>
     </div>
   );
-}
+};
 
-export default Dice;
+export default Projects;

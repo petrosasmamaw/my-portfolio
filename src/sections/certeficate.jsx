@@ -6,7 +6,7 @@ import '../css/certeficate.css';
 import reactCertificate from '../images-all/PetrosAsmamawReact.jpg';
 
 const ResumeCard = ({ img, file }) => (
-  <div className="resume-card">
+  <div id='certificate' className="resume-card">
     <div className="resume-thumb">
       <img src={img} alt="Resume thumbnail" />
     </div>
