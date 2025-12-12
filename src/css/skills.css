@@ -1,3 +1,5 @@
+/* Clean, error-free skills.css with gradient accents and consistent sizing */
+
 #skills {
   padding: 4rem 1rem;
   background: transparent;
@@ -39,16 +41,23 @@
   gap: 50px;
 }
 
+/* Section heading with gradient accent border */
 .core-skills-heading {
   font-size: 1.8rem;
   font-weight: 600;
-  color: white;
+  /* transparent text filled with gradient */
+  color: transparent;
+  background: linear-gradient(45deg, #10b981, #10b981);
+  -webkit-background-clip: text;
+  background-clip: text;
+
   text-align: center;
-  margin: 0 0 30px 0;
+  margin: 30px 0;
   position: relative;
-  margin-top: 30px;
+  display: inline-block;
 }
 
+/* optional underline keeps same accent */
 .core-skills-heading::after {
   content: '';
   position: absolute;
@@ -61,47 +70,67 @@
   border-radius: 2px;
 }
 
+/* Grid of skill cards */
 .skill-list {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
-/* First skill list (Core Front-End Skills) - 4 cards side by side */
+/* First group forced to 4 columns on wide screens */
 .skill-list:first-of-type {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
 .skill-list:first-of-type .skill-card {
   min-width: 242px;
   max-width: 272px;
 }
 
+/* Skill card with gradient ring using pseudo-element */
 .skill-card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0.01));
+  position: relative;
   border-radius: 14px;
   padding: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 12px 34px rgba(2,6,23,0.45);
   display: flex;
   flex-direction: column;
   gap: 12px;
-  min-height: 180px;
-  transition:
-    transform .18s ease,
-    box-shadow .18s ease;
-  color: white;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+/* Gradient border ring */
+.skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* ring thickness */
+  border-radius: 16px;
+  background: linear-gradient(45deg, #10b981, #10b981);
+  /* create inner cut-out so only border shows */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 .skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.45);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(2,6,23,0.55);
 }
 
 .skill-card h3 {
   font-family: var(--font-heading);
   margin: 0;
-  color: #fff;
+  /* transparent text with gradient fill */
+  color: transparent;
+  background: linear-gradient(45deg, #10b981, #10b981);
+  -webkit-background-clip: text;
+  background-clip: text;
   font-size: 1rem;
 }
 
@@ -110,88 +139,44 @@
   color: var(--muted);
   margin: 0;
   line-height: 1.5;
-  font-size: 0.98rem; /* match .feature p for consistent description size */
+  font-size: 0.98rem; /* matches features description */
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .skills {
-    gap: 40px;
-  }
-  
-  .title {
-    font-size: 2rem;
-  }
-  
-  .subtitle {
-    font-size: 1rem;
-  }
-  
-  .core-skills-heading {
-    font-size: 1.5rem;
-  }
-  
-  .skill-list {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  
-  /* First skill list responsive */
+  .skills { gap: 40px; }
+
+  .title { font-size: 2rem; }
+  .subtitle { font-size: 1rem; }
+  .core-skills-heading { font-size: 1.5rem; }
+
+  .skill-list { grid-template-columns: 1fr; gap: 25px; }
+
+  /* First skill list responsive: 2 columns on tablets */
   .skill-list:first-of-type {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  
-  .skill-list:first-of-type .skill-card {
-    min-width: auto;
-    max-width: none;
-  }
-  
-  .skill-card {
-    padding: 25px 20px;
-  }
-  
-  .skill-card h3 {
-    font-size: 1.3rem;
-  }
-  
-  .skill-card p {
-    font-size: 0.98rem; /* keep equal to features description */
-  }
+
+  .skill-card { padding: 25px 20px; }
+  .skill-card h3 { font-size: 1.3rem; }
+  .skill-card p { font-size: 0.98rem; }
 }
 
 @media (max-width: 480px) {
-  #skills {
-    padding: 60px 15px;
-  }
-  
-  .title {
-    font-size: 1.8rem;
-  }
-  
-  .subtitle {
-    font-size: 0.9rem;
-  }
-  
-  .core-skills-heading {
-    font-size: 1.3rem;
-  }
-  
-  /* First skill list mobile responsive */
+  #skills { padding: 60px 15px; }
+
+  .title { font-size: 1.8rem; }
+  .subtitle { font-size: 0.9rem; }
+  .core-skills-heading { font-size: 1.3rem; }
+
+  /* First skill list mobile responsive: single column */
   .skill-list:first-of-type {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  
-  .skill-card {
-    padding: 20px 15px;
-  }
-  
-  .skill-card h3 {
-    font-size: 1.2rem;
-  }
-  
-  .skill-card p {
-    font-size: 0.98rem; /* keep equal to features description */
-  }
+
+  .skill-card { padding: 20px 15px; }
+  .skill-card h3 { font-size: 1.2rem; }
+  .skill-card p { font-size: 0.98rem; }
 }
