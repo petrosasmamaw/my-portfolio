@@ -66,6 +66,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 .contact-col label {
@@ -77,6 +78,8 @@
 .contact-col input,
 .contact-col textarea {
   width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   background: rgba(255,255,255,0.02);
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 10px;
