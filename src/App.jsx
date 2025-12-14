@@ -3,7 +3,7 @@ import Navbar from './sections/navbar'
 import Personal from './sections/personal'
 import Features from './sections/features'
 import Skills from './sections/skills'
-import Dice from './sections/dice'
+import FullStackProjects from './sections/fullsatckProjects'
 import Projects from './sections/projects'
 import Footer from './sections/footer'
 import Certificate from './sections/certeficate'
@@ -17,7 +17,7 @@ function App() {
       <Features />
       <Skills />
       <Certificate />
-      <Dice />
+      <FullStackProjects />
       <Projects />
       <Contact />
       <Footer />

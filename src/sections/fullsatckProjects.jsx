@@ -6,7 +6,7 @@ import client from '../images-all/client.png';
 import foodweb from '../images-all/foodweb.png';
 import foodadmin from '../images-all/foodadmin.png';
 
-const Projects = () => {
+const FullStackProjects = () => {
   const projects = [
     {
       id: 1,
@@ -109,4 +109,4 @@ const ProjectCard = ({ type, image, title, description, tags, viewDetailsLink, g
   );
 };
 
-export default Projects;
+export default FullStackProjects;
