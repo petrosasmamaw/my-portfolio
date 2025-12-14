@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import certificateImage from '../images-all/Petros-Asmamaw-Udemy-Certificate.jpg';
-import resume from '../images-all/resume.png';
+import resume from '../images-all/resume2.png';
 import '../css/certeficate.css';
 import reactCertificate from '../images-all/PetrosAsmamawReact.jpg';
 
