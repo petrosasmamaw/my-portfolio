@@ -171,17 +171,47 @@
   }
 }
 
+/* Desktop/tablet: two columns */
+.text-center {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 360px; /* text | image+buttons */
+  gap: 24px;
+  align-items: center;
+}
+
+/* Mobile: stack, not side-by-side */
+@media (max-width: 768px) {
+  .text-center {
+    grid-template-columns: 1fr;  /* single column */
+    gap: 18px;
+  }
+  .text-content,
+  .right-content {
+    width: 100%;
+  }
+  /* center content for mobile */
+  .text-content { text-align: center; }
+  .right-content { align-items: center; }
+
+  /* image and buttons adjust for small screens */
+  .intro-img { max-width: 320px; }
+  .button-group {
+    flex-direction: column; /* stack buttons */
+    gap: 10px;
+    width: 100%;
+  }
+  .button-group .btn {
+    width: 100%;
+    flex: none;
+  }
+}
+
+/* Very small phones */
 @media (max-width: 480px) {
-  .name-heading {
-    font-size: 2rem;
-  }
-  
-  .intro-text {
-    font-size: 1rem;
-  }
-  
-  .intro-img {
-    width: 200px;
-    height: 200px;
-  }
+  #about { padding: 2.5rem 0.75rem; }
+  .intro-img { max-width: 300px; }
+  .name-heading { font-size: 1.7rem; }
+  .intro-text, .react-summary { font-size: 0.95rem; }
 }
