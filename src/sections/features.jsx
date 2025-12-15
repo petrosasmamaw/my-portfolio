@@ -55,7 +55,7 @@ function Features() {
                         </div>
                         <h3>Database Design & Management</h3>
                         <p>
-                            I work with MongoDB and SQL databases to store, query, and  manage data efficiently. I design schemas, indexes, and relationships for scalable full-stack applications.
+                            I work with MongoDB  manage data efficiently. I design schemas, indexes, and relationships for scalable full-stack applications.
                         </p>
                         <a href="https://t.me/Nehemiah00" className="icon-link">Contact to action</a>
                     </div>
