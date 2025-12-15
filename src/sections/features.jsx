@@ -67,7 +67,7 @@ function Features() {
                         </div>
                         <h3>Deployment & Cloud Integration</h3>
                         <p>
-                            I deploy full-stack apps on platforms like Vercel, Netlify, or Heroku, and integrate cloud services like Cloudinary or AWS S3. Ensures live apps, storage management, and continuous delivery.
+                            I deploy full-stack apps on platforms like Vercel, Netlify, or Heroku, Render, and integrate cloud services like Cloudinary or AWS S3. Ensures live apps, storage management, and continuous delivery.
                         </p>
                         <a href="https://t.me/Nehemiah00" className="icon-link">Contact to action</a>
                     </div>
