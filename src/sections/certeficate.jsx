@@ -32,7 +32,7 @@ const CertificateCard = ({ title, img, downloadName }) => (
     </div>
     <div className="right-section">
       <h2 className="udemy-title">{title}</h2>
-      <p className="udemy-subtitle">Verified Udemy certificate demonstrating course completion and applied skills.</p>
+      <p className="udemy-subtitle">Verified Udemy certificate demonstrating course completion , applied skills and projects.</p>
       <div className="button-container">
         <a href={img} download={downloadName} className="resume-link">
           <FaDownload style={{ marginRight: '8px', verticalAlign: 'middle' }} />
