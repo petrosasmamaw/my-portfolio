@@ -7,7 +7,7 @@ function Skills() {
             <div className="skills">
 
                 {/* Front-End Skills */}
-                <p className="core-skills-heading">Front-End Skills</p>
+                <p className="core-skills-heading">FrontEnd Skills</p>
                 <div className="skill-list">
                     <div className="skill-card">
                         <h3>HTML</h3>
